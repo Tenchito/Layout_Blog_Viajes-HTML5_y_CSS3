@@ -10,12 +10,21 @@ body {
 img {
     max-width: 100%;
 }
+p {
+    font-size: 16px;
+    line-height: 2;
+}
 .site-header {
     padding: 20px 0
 }
 .contenedor {
     max-width: 1200px;
     margin: 0 auto;
+}
+.clearfix::after {
+    content:'';
+    clear: both;
+    display: block;
 }
 /** Navegacion **/
 .barra {
@@ -37,4 +46,41 @@ img {
 }
 .navegacion-principal a:hover {
     background-color: #00B8E4;
+}
+
+.footer-sitio {
+    background-color: #DB008D;
+    padding-top: 40px;
+    margin-top: 60px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.footer-sitio h2 {
+    color: #FFFFFF;
+}
+.footer-sitio a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 22px;
+    margin-right: 20px;
+}
+.footer-sitio:last-of-type {
+    margin-right: 0;
+}
+@media (min-width: 768px) {
+    .footer-sitio .nosotros {
+        float: left;
+        width: 30%;
+        text-align: left;
+    }
+    .footer-sitio .menu {
+        float: right;
+        width: 50%;
+        text-align: right;
+    }
+}
+.copyright {
+    background-color: #B10474;
+    margin: 50px 0 0 0;
+    padding: 20px 0;
 }
